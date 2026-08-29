@@ -4,91 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Serunai Tumpak | RT 4/RW 3</title>
+    <title>Serunai Tumpak | Salatiga</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <div class="logo">SERUNAI TUMPAK</div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-icon">S</div>
+        <div>
+            <strong>Serunai Tumpak</strong>
+            <span>Salatiga • Sambas</span>
+        </div>
+    </div>
 
-        <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#suasana">Suasana</a></li>
-            <li><a href="#galeri">Galeri</a></li>
-            <li><a href="#lokasi">Lokasi</a></li>
-        </ul>
+    <nav id="navMenu">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#potensi">Potensi</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak">Kontak</a>
     </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
 
-<!-- BERANDA -->
-<section id="home" class="hero">
+<!-- HERO -->
+<section id="beranda" class="hero">
 
     <div class="hero-content">
 
-        <p class="welcome">SELAMAT DATANG DI</p>
+        <p class="small-title">SELAMAT DATANG DI</p>
 
-        <h1>Serunai Tumpak</h1>
+        <h1>
+            Serunai<br>
+            <span>Tumpak</span>
+        </h1>
 
-        <h2>RT 4 / RW 3</h2>
-
-        <p>
-            Mengenal lebih dekat keindahan, suasana,
-            dan kehidupan masyarakat Serunai Tumpak,
-            Desa Serunai, Kecamatan Salatiga,
-            Kabupaten Sambas.
+        <p class="hero-text">
+            Mengenal lebih dekat keindahan, kehidupan,
+            budaya, dan potensi masyarakat Serunai Tumpak,
+            Kecamatan Salatiga, Kabupaten Sambas.
         </p>
 
-        <a href="#tentang" class="btn">
-            Jelajahi Serunai Tumpak
-        </a>
+        <div class="hero-buttons">
+            <a href="#profil" class="btn-primary">
+                Jelajahi Desa →
+            </a>
+
+            <a href="#lokasi" class="btn-outline">
+                📍 Lihat Lokasi
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <img src="images/serunai1.jpg" alt="Serunai Tumpak">
+
+        <div class="image-caption">
+            <span>DESA SERUNAI</span>
+            <strong>Tumpak • Salatiga</strong>
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- TENTANG -->
-<section id="tentang" class="section">
+<!-- STATISTIK -->
+<section class="stats">
 
-    <div class="title">
-        <p>KENALI DAERAH KAMI</p>
-        <h2>Tentang Serunai Tumpak</h2>
+    <div>
+        <strong>01</strong>
+        <span>Wilayah</span>
     </div>
 
-    <div class="about">
+    <div>
+        <strong>04</strong>
+        <span>RT / RW</span>
+    </div>
 
-        <img src="images/foto1.jpg"
-             alt="Serunai Tumpak">
+    <div>
+        <strong>∞</strong>
+        <span>Potensi Lokal</span>
+    </div>
 
-        <div class="about-text">
+    <div>
+        <strong>100%</strong>
+        <span>Kebersamaan</span>
+    </div>
 
-            <h3>Serunai Tumpak</h3>
+</section>
+
+
+<!-- PROFIL -->
+<section id="profil" class="section">
+
+    <div class="section-heading">
+        <p>TENTANG KAMI</p>
+        <h2>Mengenal Serunai Tumpak</h2>
+    </div>
+
+    <div class="profile-grid">
+
+        <div class="profile-image">
+            <img src="images/serunai2.jpg" alt="Profil Serunai">
+        </div>
+
+        <div class="profile-text">
+
+            <span class="label">PROFIL WILAYAH</span>
+
+            <h3>
+                Sebuah bagian dari
+                <span>Salatiga</span>
+            </h3>
 
             <p>
-                Serunai Tumpak merupakan bagian dari
-                Desa Serunai, Kecamatan Salatiga,
-                Kabupaten Sambas, Kalimantan Barat.
+                Serunai Tumpak merupakan bagian dari wilayah
+                Kecamatan Salatiga, Kabupaten Sambas,
+                Kalimantan Barat.
             </p>
 
             <p>
-                Dengan suasana pedesaan yang asri,
-                lingkungan yang hijau, serta kehidupan
-                masyarakat yang sederhana dan penuh
-                kebersamaan.
+                Website ini menjadi media informasi sederhana
+                untuk memperkenalkan wilayah, kehidupan
+                masyarakat, budaya, serta potensi lokal
+                Serunai Tumpak kepada masyarakat luas.
             </p>
 
-            <div class="alamat">
-                📍 RT 4 / RW 3<br>
-                Desa Serunai, Kecamatan Salatiga<br>
-                Kabupaten Sambas, Kalimantan Barat
+            <div class="quote">
+                “Bersama menjaga lingkungan,
+                budaya, dan kebersamaan.”
             </div>
 
         </div>
@@ -98,40 +156,53 @@
 </section>
 
 
-<!-- SUASANA -->
-<section id="suasana" class="section gray">
+<!-- POTENSI -->
+<section id="potensi" class="section light">
 
-    <div class="title">
-        <p>KEINDAHAN DAERAH</p>
-        <h2>Suasana Serunai Tumpak</h2>
+    <div class="section-heading center">
+        <p>KEUNGGULAN LOKAL</p>
+        <h2>Potensi Serunai</h2>
+        <span>
+            Kekayaan lokal yang menjadi bagian dari kehidupan
+            masyarakat.
+        </span>
     </div>
 
-    <div class="features">
+    <div class="cards">
 
-        <div class="feature">
-            <div class="icon">🌿</div>
-            <h3>Alam yang Asri</h3>
+        <div class="card">
+            <div class="card-icon">🌾</div>
+            <h3>Pertanian</h3>
             <p>
-                Lingkungan hijau dan suasana
-                pedesaan yang tenang.
+                Potensi pertanian menjadi salah satu bagian
+                penting dalam kehidupan masyarakat sekitar.
             </p>
         </div>
 
-        <div class="feature">
-            <div class="icon">🏡</div>
-            <h3>Kehidupan Masyarakat</h3>
+        <div class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Lingkungan</h3>
             <p>
-                Kehidupan masyarakat yang sederhana,
-                ramah, dan penuh kebersamaan.
+                Lingkungan yang asri menjadi aset yang perlu
+                dijaga bersama oleh masyarakat.
             </p>
         </div>
 
-        <div class="feature">
-            <div class="icon">🌾</div>
-            <h3>Potensi Daerah</h3>
+        <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Gotong Royong</h3>
             <p>
-                Memiliki lingkungan dan kehidupan
-                pedesaan yang menarik untuk dikenalkan.
+                Semangat kebersamaan dan gotong royong
+                mempererat hubungan antarwarga.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎭</div>
+            <h3>Budaya</h3>
+            <p>
+                Tradisi dan budaya lokal menjadi identitas
+                yang terus diwariskan.
             </p>
         </div>
 
@@ -143,41 +214,39 @@
 <!-- GALERI -->
 <section id="galeri" class="section">
 
-    <div class="title">
+    <div class="section-heading">
         <p>DOKUMENTASI</p>
-        <h2>Galeri Serunai Tumpak</h2>
+        <h2>Galeri Serunai</h2>
     </div>
 
     <div class="gallery">
 
-        <div class="card">
-            <img src="images/foto1.jpg" alt="Serunai Tumpak">
-            <h3>Suasana Serunai Tumpak</h3>
+        <div class="gallery-item big">
+            <img src="images/serunai1.jpg" alt="Galeri Serunai">
+            <div class="gallery-overlay">
+                Serunai Tumpak
+            </div>
         </div>
 
-        <div class="card">
-            <img src="images/foto2.jpg" alt="Jalan Serunai">
-            <h3>Jalan Desa</h3>
+        <div class="gallery-item">
+            <img src="images/serunai2.jpg" alt="Kegiatan Serunai">
+            <div class="gallery-overlay">
+                Kehidupan Masyarakat
+            </div>
         </div>
 
-        <div class="card">
-            <img src="images/foto3.jpg" alt="Lingkungan Serunai">
-            <h3>Lingkungan Desa</h3>
+        <div class="gallery-item">
+            <img src="images/serunai3.jpg" alt="Lingkungan Serunai">
+            <div class="gallery-overlay">
+                Lingkungan
+            </div>
         </div>
 
-        <div class="card">
-            <img src="images/foto4.jpg" alt="Masyarakat Serunai">
-            <h3>Kehidupan Masyarakat</h3>
-        </div>
-
-        <div class="card">
-            <img src="images/foto5.jpg" alt="Alam Serunai">
-            <h3>Keindahan Alam</h3>
-        </div>
-
-        <div class="card">
-            <img src="images/foto6.jpg" alt="Serunai Tumpak">
-            <h3>Serunai Tumpak</h3>
+        <div class="gallery-item">
+            <img src="images/serunai4.jpg" alt="Kegiatan Warga">
+            <div class="gallery-overlay">
+                Kegiatan Warga
+            </div>
         </div>
 
     </div>
@@ -186,38 +255,80 @@
 
 
 <!-- LOKASI -->
-<section id="lokasi" class="section gray">
+<section id="lokasi" class="section location-section">
 
-    <div class="title">
-        <p>TEMUKAN KAMI</p>
-        <h2>Lokasi Serunai Tumpak</h2>
+    <div class="section-heading center">
+        <p>LOKASI</p>
+        <h2>Temukan Serunai Tumpak</h2>
+        <span>
+            Kecamatan Salatiga, Kabupaten Sambas,
+            Kalimantan Barat.
+        </span>
     </div>
 
-    <div class="map-box">
+    <div class="map-container">
 
         <iframe
-            src="https://www.google.com/maps?q=Serunai,%20Salatiga,%20Kabupaten%20Sambas,%20Kalimantan%20Barat&output=embed"
-            loading="lazy">
+            src="https://www.google.com/maps?q=Serunai%2C%20Salatiga%2C%20Sambas%2C%20Kalimantan%20Barat&output=embed"
+            loading="lazy"
+            allowfullscreen>
         </iframe>
 
     </div>
 
-    <div class="location">
+</section>
 
-        <h3>📍 Serunai Tumpak</h3>
 
-        <p>
-            RT 4 / RW 3<br>
-            Desa Serunai, Kecamatan Salatiga<br>
-            Kabupaten Sambas, Kalimantan Barat
-        </p>
+<!-- KONTAK -->
+<section id="kontak" class="contact">
 
-        <a
-            href="https://www.google.com/maps/search/?api=1&query=Serunai+Salatiga+Sambas+Kalimantan+Barat"
-            target="_blank"
-            class="map-btn">
-            Buka di Google Maps
-        </a>
+    <div class="contact-content">
+
+        <div>
+            <p class="small-title">INFORMASI</p>
+
+            <h2>
+                Mari mengenal
+                <span>Serunai</span>
+                lebih dekat.
+            </h2>
+
+            <p>
+                Website ini dibuat sebagai media informasi
+                dan promosi wilayah Serunai Tumpak.
+            </p>
+        </div>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <small>Alamat</small>
+                    <strong>
+                        Serunai Tumpak, Kecamatan Salatiga,
+                        Kabupaten Sambas, Kalimantan Barat
+                    </strong>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📱</span>
+                <div>
+                    <small>Media Sosial</small>
+                    <strong>@serunaitumpak</strong>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>✉️</span>
+                <div>
+                    <small>Email</small>
+                    <strong>serunaitumpak@gmail.com</strong>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 
@@ -227,21 +338,15 @@
 <!-- FOOTER -->
 <footer>
 
-    <h3>Serunai Tumpak</h3>
-
-    <p>RT 4 / RW 3</p>
-
-    <p>
-        Desa Serunai • Kecamatan Salatiga
-    </p>
-
-    <p>
-        Kabupaten Sambas • Kalimantan Barat
-    </p>
-
-    <div class="copyright">
-        © 2026 Website Serunai Tumpak
+    <div class="footer-logo">
+        <div class="logo-icon">S</div>
+        <strong>Serunai Tumpak</strong>
     </div>
+
+    <p>
+        © 2026 Serunai Tumpak. Dibuat untuk memperkenalkan
+        potensi dan keindahan wilayah.
+    </p>
 
 </footer>
 
@@ -249,4 +354,4 @@
 <script src="script.js"></script>
 
 </body>
-</html>
+                </html>
