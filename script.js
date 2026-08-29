@@ -1,29 +1,55 @@
-// Animasi galeri saat halaman digulir
+// MENU MOBILE
 
-const cards = document.querySelectorAll(".card");
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+}
 
-const observer = new IntersectionObserver((entries) => {
 
-    entries.forEach((entry) => {
+// TUTUP MENU SETELAH LINK DIKLIK
 
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
+document.querySelectorAll("#navMenu a").forEach(link => {
 
+    link.addEventListener("click", () => {
+        document.getElementById("navMenu").classList.remove("active");
     });
 
-}, {
-    threshold: 0.15
 });
 
 
-cards.forEach((card) => {
+// ANIMASI SAAT SCROLL
 
-    card.style.opacity = "0";
-    card.style.transform = "translateY(30px)";
-    card.style.transition = "0.6s";
+const elements = document.querySelectorAll(
+    ".card, .profile-image, .profile-text, .gallery-item, .contact-item"
+);
 
-    observer.observe(card);
+const observer = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+elements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(25px)";
+    element.style.transition = "opacity .7s ease, transform .7s ease";
+
+    observer.observe(element);
 
 });
